@@ -1,4 +1,3 @@
-import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -12,6 +11,13 @@ import java.util.stream.IntStream;
  * от транспортного средства
  */
 public class ListService {
+
+    public static void main(String[] args) {
+        Vehicle vehicle = new Car();
+        vehicle.move();
+        Car car = (Car) vehicle;
+        car.openDoor();
+    }
 
     public static List<Integer> numEven(int n) {
         return IntStream.rangeClosed(0, n).boxed().collect(Collectors.toList());
