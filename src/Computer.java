@@ -7,7 +7,9 @@ public class Computer {
     }
 
     public void setMemory(int memory) {
+        if (memory > 0)
         this.memory = memory;
+
     }
 
     public String getVideoCard() {
